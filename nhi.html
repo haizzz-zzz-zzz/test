@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đỗ Thị Yến Nhi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+            display: none; /* Ẩn ảnh ban đầu */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Xin chào mọi người!</h1>
+    <h2>Giới thiệu bản thân</h2>
+    <p><b>Mình là sinh viên</b>, hiện đang học <i>Lập trình web</i>.</p>
+
+    <!-- Nút bấm -->
+    <button onclick="welcome()">welcome</button>
+    <button onclick="myLovelyPet()">myLovelyPet</button>
+    <button onclick="changeBackGround()">changeBackGround</button>
+
+    <!-- Ảnh con vật yêu thích -->
+    <img id="petImage" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="My Lovely Pet">
+
+    <script>
+        // Nút 1: đổi nội dung H1 thành tên
+        function welcome() {
+            document.getElementById("title").innerText = "Mình là Đỗ Thị Yến Nhi";
+        }
+
+        // Nút 2: hiển thị ảnh con vật
+        function myLovelyPet() {
+            document.getElementById("petImage").style.display = "block";
+        }
+
+        // Nút 3: đổi màu nền thành vàng
+        function changeBackGround() {
+            document.body.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
